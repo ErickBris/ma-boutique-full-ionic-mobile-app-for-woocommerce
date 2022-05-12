@@ -1,0 +1,491 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Ma Boutique - Woocommerce app builder</title>
+	
+	<meta name="description" content="This woocommerce app builder allow you to easily create mobile application for your woommerce store without having to code.">
+	<meta name="author" content="Themeleger">
+	<meta name="copyright" content="Themeleger">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2016-06-29T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_30.png);}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		img {
+			width: 600px;
+			height: auto;
+		}
+		img#edit2 {
+			width: 225px;
+			height: 358px;
+		}
+	</style>
+	
+</head>
+<body class="documenter-project-ma-boutique">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Introduction</a></li>
+			<li><a href="#start_guide" title="Start Guide">Start Guide</a></li>	
+			<li><a href="#getting_started" title="Getting Started">Getting Started</a></li>
+			<li><a href="#setting_up" title="Setting up ">Setting up </a>
+				<ul>
+					<li><a href="#setting_up_api_configuration">API configuration</a>
+					<li><a href="#configuring_woocommerce">Configuring Woocommerce</a>
+					<li><a href="#setting_up_app_configuration">App Configuration</a>
+				</ul>
+			</li>
+			<li><a href="#testing" title="Testing">Testing</a>
+				<ul>
+					<li><a href="#testing_testing_with_browser">Testing with browser</a>
+					<li><a href="#testing_testing_with_an_emulator">Testing with an emulator</a>
+					<li><a href="#testing_testing_with_a_device">Testing with a device</a>
+				</ul>
+			</li>
+			<li><a href="#changing_the_style" title="Changing the style">Changing the style</a>
+				<ul>
+					<li><a href="#changing_the_style_changing_the_theme">Changing the theme</a>
+					<li><a href="#changing_the_style__nbsp">&nbsp;</a>
+					<li><a href="#changing_the_style_creating_your_own_theme">Creating your own theme</a>
+				</ul>
+			</li>
+			<li><a href="#building_and_publishing" title="Building and publishing">Building and publishing</a></li>
+			<li><a href="#having_problems_get_in_touch" title="Having problems? Get in touch.">Having problems? Get in touch.</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Themeleger 2016<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Ma Boutique</h1>
+	<h2>Full Ionic Mobile App for Woocommerce</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>Created: 06/30/2016</li>
+	<li>Latest update: 07/06/2016</li>
+	<li>Created By: Themeleger</li>
+	<li>Website: <a href="http://www.themeleger.com/boutique/">www.themeleger.com/boutique/</a></li>
+	<li>Email: <a href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#116;&#104;&#101;&#109;&#101;&#108;&#101;&#103;&#101;&#114;&#46;&#99;&#111;&#109;">&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#116;&#104;&#101;&#109;&#101;&#108;&#101;&#103;&#101;&#114;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p>Thank you for purchasing this application. If you have any questions that are beyond the scope of this help file, please feel free to email us &#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#116;&#104;&#101;&#109;&#101;&#108;&#101;&#103;&#101;&#114;&#46;&#99;&#111;&#109;. Thanks so much!</p>
+	</section>
+	
+	<section id="start_guide">
+		<div class="page-header"><h3>Start Guide</h3><hr class="notop"></div>
+		<p>
+			<h4>About the 'Ma Boutique' App</h4>
+			<p>
+				Ma Boutique is a full online shopping mobile application available for both IOS and Android that allow you to create an app for your Woocommerce store easily and without having to code or hire a developer which then you can upload to App Store and Play Store.
+			</p>
+			<h4>Features</h4>
+			<ul>
+				<li>Mordern Design</li>
+				<li>Beautiful UI</li>
+				<li>Clean and Elegant Interface</li>
+				<li>Easy To Use</li>
+				<li>Very Easy To Setup</li>
+				<li>Easy To Integrate with Woocommerce</li>
+				<li>Fully Configurable</li>
+				<li>Secure</li>
+				<li>Easy To Change Appearance</li>
+				<li>And much more …</li>
+			</ul>
+			<h4>Requirements</h4>
+			<ul>
+				<li><a href="https://wordpress.org/download/" target="_blank">Wordpress 4.1 or later</a></li>
+				<li><a href="https://woocommerce.com/" target="_blank">Woocommerce 2.4.x or later</a></li>
+				<li><a href="https://nodejs.org/en/" target="_blank">NodeJS</a></li>
+				<li><a href="http://www.ionicframework.com/" target="_blank">Ionic</a></li>
+				<li>Android SDK and/or IOS SDK</li>
+			</ul>
+			<h4>Folder Structure</h4>
+			<ul>
+				<li>
+					<strong>App Source:</strong> The main files and source codes of the app
+					<ul style="margin-top:2px;margin-bottom:2px;">
+						<li><strong>SCSS:</strong> Contains the main SCSS files used to generate the stylesheet (you can ignore this folder if you don't understand SASS)</li>
+						<li><strong>Themes:</strong> Contains the themes files which you can use to change the appearance of the app</li>
+						<li><strong>WWW:</strong> Contains the main files required for the app to run</li>
+					</ul>
+				</li>
+				<li><strong>Woocommerce File:</strong> This folder contains a file which we will use later to configure our Woocommerce store</li>
+				<li><strong>Documentation:</strong> Contains the documentation for this app</li>
+			</ul>
+		<p>
+	</section>
+
+	<section id="getting_started">
+	<div class="page-header"><h3>Getting Started</h3><hr class="notop"></div>
+<p>
+	Before starting you need to Install <a href="http://ionicframework.com/getting-started/" target="_blank">Ionic Framework</a>&nbsp;on your computer, to do that use NPM (If you don&#39;t have NodeJs installed <a href="https://nodejs.org/en/" target="_blank">download it from here</a>)</p>
+<p>
+	Then open up your terminal and run the following command:</p>
+<pre class="prettyprint lang-plain linenums">
+  npm install -g cordova ionic</pre>
+<p>
+	You now have Ionic framework installed on your computer.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Now, you need to make sure that you have the required SDK to build your mobile app.</p>
+<p>
+	Setting up IOS and Android SDK is well documented on the Apache Cordova website:</p>
+<ul>
+	<li>
+		<a href="http://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#installing-the-requirements" target="_blank">Android</a></li>
+	<li>
+		<a href="http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#installing-the-requirements" target="_blank">IOS</a></li>
+</ul>
+<p>
+	&nbsp;</p>
+<p>
+	Now that we have all the requirements for building mobile apps with ionic, we can start by creating our project.</p>
+<p>
+	Open up the&nbsp;<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">terminal and navigate to the folder you want to create your app in, then run this command</span></p>
+	<p style="margin-left:15px;">
+	* Always replace <strong>AppName </strong>with the name of your App</p>
+<p>
+<pre class="prettyprint lang-plain linenums">
+ionic start AppName blank</pre>
+	Now navigate to the app folder</p>
+<pre class="prettyprint lang-plain linenums">
+cd <span style="font-family: Arial, Verdana, sans-serif;">AppName </span></pre>
+<p>
+	<span style="font-family: Arial, Verdana, sans-serif;">Then we add IOS and Android platforms (only add the one you're planning to use):</span></p>
+<pre class="prettyprint lang-plain linenums">
+ionic platform add ios
+ionic platform add android</pre>
+<p>
+	Copy and replace the dowloaded <strong>www</strong> folder with the one in the <strong>AppName </strong>folder.</p>
+<p>
+	Then we need to add the Cordova inApp browser plugin:</p>
+<ol>
+	<li>
+		Make sure your in <strong>AppName</strong> folder</li>
+	<li>
+		Run the following command</li>
+</ol>
+<pre class="prettyprint lang-plain linenums" style="margin-left: 40px;">
+cordova plugin add cordova-plugin-inappbrowser</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Now, we&#39;re good to go, you can find more about creating a project with Ionic on <a href="http://ionicframework.com/docs/guide/installation.html" target="_blank">their official documentation</a>.</p>
+</section>
+<section id="setting_up">
+	<div class="page-header"><h3>Setting up </h3><hr class="notop"></div>
+<h4 id="setting_up_api_configuration">API configuration</h4>
+<p>
+	Let&#39;s start by setting up our API configuration:</p>
+<ol>
+	<li>
+		Login to your Wordpress admin dashboard</li>
+	<li>
+		Go to&nbsp;<strong>Woocommerce -&gt; Setting</strong></li>
+	<li>
+		Select the&nbsp;<strong>API&nbsp;</strong>&nbsp;tab</li>
+	<li>
+		Make sure&nbsp;<strong>Enable the REST API</strong>&nbsp;is checked</li>
+	<li>
+		Click on&nbsp;<strong>Keys/Apps</strong></li>
+	<li>
+		Click on&nbsp;<strong>Add Key</strong></li>
+	<li>
+		Then&nbsp;<strong>Generate Key</strong></li>
+	<li>
+		Make sure to copy these keys in a safe place, you won&#39;t be able to see them again in your dashboard</li>
+</ol>
+<p>
+	&nbsp;</p>
+<p class="c_1">
+	Enabling REST API in Woocommerce</p>
+<p>
+	<img alt="Enabling REST API in Woocommerce" src="assets/images/image_1.png" style="width: 834px; height: 400px;"></p>
+<p>
+	&nbsp;</p>
+<p class="c_1">
+	Generating the API keys</p>
+<p>
+	<img alt="" src="assets/images/image_5.png" style="width: 655px; height: 372px;"></p>
+<p>
+	&nbsp;</p>
+<p class="c_1">
+	Example of generated keys</p>
+<p>
+	<img alt="" src="assets/images/image_6.png" style="width: 777px; height: 508px;"></p>
+<h4 id="configuring_woocommerce">Configuring Woocommerce</h4>
+<p>
+	Now we need to configure Woocommerce by a simple Copy/Paste operation.
+	<ol>
+		<li>First copy the file <strong>class-wc-api-products.php</strong> from the directory <strong>Woocommerce File</strong> inside the downloaded files.</li>
+		<li>Use your favorite FTP client to access your website files.</li>
+		<li>Now paste the copied file in <strong>\wp-content\plugins\woocommerce\includes\api</strong> directory and click on Replace <strong style="color:red;">REMEMBER TO BACKUP YOUR FILE</strong></li>
+	</ol> 
+	That should do it, but if you don't have FTP access follow these steps (you can skip them if you successfully finished the steps above):
+	<ol>
+		<li>First open up the <strong>Woocommerce File\class-wc-api-products.php</strong> file with a text editor and copy all its content (ctrl+a then ctrl+c in Windows and command+a then command+c on a Mac)</li>
+		<li>Now open up Wordpress plugin code editor from your dashboard <strong>(Plugins/Editor)</strong></li>
+		<li>Select the Woocommerce plugin in the <strong>Select plugin to edit</strong> list and click 'Select'</li>
+		<li>In the sidebar you can see the plugin files, click on the one that's called <strong>woocommerce/includes/class-wc-api.php</strong></li>
+		<li>Click on <strong>woocommerce/includes/api/class-wc-api-products.php</strong> (you can search for it by using Ctrl+f of Command+f)</li>
+		<li>Now you should see the content of the class-wc-api-products.php file in your page, all you need to do is simply select all the content of this file and delete it and then paste the previously copied content from our file (<strong>Woocommerce File\class-wc-api-products.php</strong>)</li>
+		<li>Click 'Update File' button. Wordpress should tell you that the file was edited successfully.</li>
+	</ol>
+	<img src="assets/images/edit1.png" alt="" style="width: 1000px; height: auto;"> <br><br>
+	<img id="edit2" src="assets/images/edit2.png" alt="">
+	<br><br><br><br>
+
+	That wasn't very difficult right ? but don't worry the rest is a piece of cake.
+	If you want to know why this configuration is necessary you can checkout <a href="http://www.themeleger.com/blog/fetching-by-categories-in-woocommerce-rest-api/" target="_blank">this article in my blog</a>.
+	<br>
+	And as always if you have any problems or questions contact us at <a href="mailto:contact@themeleger.com">contact@themeleger.com</a>
+</p>
+<h4 id="setting_up_app_configuration">App Configuration</h4>
+<p>
+	It&#39;s time to generate our app configuration, you can do it easily with our generator or you can do it manully.</p>
+<h5>
+	Using the config&nbsp;generator:</h5>
+<ol>
+	<li>
+		&nbsp;First visit <a href="http://www.themeleger.com/boutique/" target="_blank"><strong>Themeleger.com/boutique</strong></a></li>
+	<li>
+		Click on <strong>Generate Configuration</strong></li>
+	<li>
+		Fill with the informations of your App
+		<pre class="prettyprint lang-plain">
+		<strong>Store Title: </strong>The title displayed in the header bar of the app
+		<strong>Store Link: </strong>your store homepage URL
+		<strong>Checkout Link</strong>: your store checkout URL
+		<strong>Customer Key &amp; Customer Secret</strong>: The keys generated when setting up the API
+		<strong>Timeout</strong>: timeout when calling the server before throwing an error (default 20000 ms)
+		<strong>Messages</strong>: you can change the messages displayed to the user or you can leave it to default</pre>
+	</li>
+	<li>
+		Click on <strong>Generate, </strong>this<strong>&nbsp;</strong>should download your new <strong>config.js</strong> file</li>
+	<li>
+		Replace <strong>www/js/config.js </strong>file with the downloaded one (always backup before replacing)</li>
+</ol>
+
+<p>
+	&nbsp;</p>
+<p class="c_1">
+	Generation the configuration file</p>
+<p>
+	<img alt="" src="assets/images/image_2.png"  ></p>
+<p>
+	<img alt="" src="assets/images/image_3.png"></p>
+<p>
+	<img alt="" src="assets/images/image_4.png"></p>
+<p>
+	&nbsp;</p>
+<h5>
+	Manually changing configuration (ignore this section if you successfully generated the config.js file) :</h5>
+<ol>
+	<li>
+		Open <strong>www/js/config.js </strong>file with a text editor</li>
+	<li>
+		Change the value of the <strong>config </strong>object</li>
+</ol>
+<pre class="prettyprint lang-js linenums">
+var config = {
+
+    title: &#39;Boutique&#39;, // Title displayed in the app
+
+    link: &#39;http://192.168.1.3/wp/&#39;, // Woocommerce homepage URL
+
+    checkout: &#39;http://192.168.1.3/wp/index.php/checkout/&#39;, // Woocommerce checkout URL
+
+    timeout: 20000, // Timeout of api calls in milliseconds
+
+    api: {
+
+        link: &#39;http://192.168.1.3/wp/&#39;+&#39;wc-api/v3/&#39;, // API link
+
+        key: &#39;ck_ab881ffc26e2175cac94013c5276ff38be129a2c&#39;, // API customer key 
+
+        secret: &#39;cs_83b1c7248210865e26856a29974200ee17bbf881&#39;, // API customer secret
+
+        signature: &#39;HMAC-SHA1&#39;, // API signature algorithm
+
+        version: &#39;1.0&#39; // OAuth Version
+
+    },
+
+    messages: { // HTML Allowed
+
+        sale_text: &#39;Sale&#39;, // Text on the sale badge
+
+        added_cart: &#39;Successfully added to your cart !&#39;, // Message to show when a product is added to cart
+
+        exists_cart: &#39;Product already exist in your cart !&#39;, // Message to show when a product already exists in cart
+
+        server: &#39;There was a problem connecting to the server !&lt;br&gt;Please try again later&#39;, // Message to show if there&#39;s no server connection
+
+        no_internet: &#39;Please check your internet connection !&#39;, // Message to show if there&#39;s no internet connection
+
+        empty: &quot;There&#39;s no products in this categorie.&quot;, // Message to show if a categorie is empty
+
+        empty_cart: &quot;There&#39;s no item in your cart !&quot;, // Message to show if the user cart is empty
+
+        empty_shop: &quot;The shop is empty&quot;, // Message to show if the website have no categories
+
+        error: &#39;There was an error&#39; // Generic error message
+
+    },
+
+    views: { // Views title
+
+        homePage: &#39;Boutique&#39;,
+
+        cart: &#39;Cart&#39;
+
+    }
+
+};</pre>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="testing">
+	<div class="page-header"><h3>Testing</h3><hr class="notop"></div>
+<p>
+	You can test your app in the browser, on an emulator or on your device:</p>
+<h4 id="testing_testing_with_browser">Testing with browser</h4>
+<ol>
+	<li>
+		Navigate to the <strong>AppName</strong> folder with your terminal&nbsp;</li>
+	<li>
+		Execute the following command (Resize your browser to simulate a smartphone)</li>
+</ol>
+<pre class="prettyprint lang-plain linenums" style="margin-left: 40px;">
+ionic serve</pre>
+<div class="alert alert-error">
+	The checkout page only works on real devices or emulators</div>
+<p>
+	&nbsp;</p>
+<h4 id="testing_testing_with_an_emulator">Testing with an emulator</h4>
+<ol>
+	<li>
+		You can use the Iphone emulator in XCode or the android studio emulator (it&#39;s better to use <a href="https://www.genymotion.com/" target="_blank">genymtion emulator</a> for android which is alot faster)&nbsp;</li>
+	<li>
+		For Ios run the following:</li>
+</ol>
+<pre class="prettyprint lang-plain linenums" style="margin-left: 40px;">
+ionic build ios
+ionic emulate ios</pre>
+<p style="margin-left: 40px;">
+	and for Android:</p>
+<pre class="prettyprint lang-plain linenums" style="margin-left: 40px;">
+ionic run android</pre>
+<h4 id="testing_testing_with_a_device">Testing with a device</h4>
+<p style="margin-left: 40px;">
+	Use the same commands as in an emulator but with a device plugged in.</p>
+<div class="alert" style="margin-left: 40px;">
+	For android make sure the&nbsp;USB debugging is enabled on your device</div>
+<p class="c_1">
+	Find more about <a href="http://ionicframework.com/docs/guide/testing.html" target="_blank">testing ionic app here</a>.</p>
+</section>
+<section id="changing_the_style">
+	<div class="page-header"><h3>Changing the style</h3><hr class="notop"></div>
+<p>
+	You can change the appearance of your app by using one of our themes or by creating your own theme.</p>
+<h4 id="changing_the_style_changing_the_theme">Changing the theme</h4>
+<ol>
+	<li>
+		Simply copy and replace the <strong>style.css</strong> file from the theme folder in <strong>www/css/style.css </strong>(make sure you have a backup file before replacing)</li>
+</ol>
+<div class="alert">
+	More themes will be available in the futures.</div>
+<h4 id="changing_the_style_creating_your_own_theme">Creating your own theme</h4>
+<p>
+	You can create your own theme with <strong>SASS.</strong></p>
+<ol>
+	<li>
+		Open up <strong>SCSS/style.scss</strong> with a text editor</li>
+	<li>
+		Edit the code (colors, fonts, height and width, etc..)
+	</li>
+	<li>
+		Compile the file using a SASS compiler (recommended <a href="http://koala-app.com/" target="_blank">KOALA</a> or <a href="http://gulpjs.com/" target="_blank">GULP</a>)
+	</li>
+</ol>
+</section>
+<section id="building_and_publishing">
+	<div class="page-header"><h3>Building and publishing</h3><hr class="notop"></div>
+<p>
+	Now we have a working Woocommerce mobile app ready to be published for both IOS and Android.
+	If you don't know how to build and publish mobile apps you can check out <a href="http://ionicframework.com/docs/guide/publishing.html" target="_blank">this step-by-step documentation</a> created by the Ionic team. 
+</p>
+
+</section>
+
+<section id="having_problems_get_in_touch">
+	<p>
+	If you run into any problems during installation, use, or styling please feel free to contact us at <a href="mailto:contact@themeleger.com">contact@themeleger.com</a>.</p>
+</section>
+
+
+	</div>
+</body>
+</html>
